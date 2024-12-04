@@ -1,0 +1,10 @@
+/* hero background image and gradient color */
+.hero {
+  background: linear-gradient(
+      rgba(var(--c-brand-rgp), 0.600),
+      rgba(var(--c-brand-rgp), 0.400)
+    ),
+    url("../assets/images/hero-1.jpg");
+  background-position: center;
+  background-size: cover;
+}
