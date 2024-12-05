@@ -6,6 +6,7 @@ import NavBar from "./components/NavBar";
 import Portfolio from "./components/Portfolio";
 import Reviews from "./components/Reviews";
 import Services from "./components/Services";
+import Team from "./components/Team";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <Counter />
       <Portfolio />
       <Reviews />
+      <Team/>
     </div>
   );
 }

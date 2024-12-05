@@ -1,0 +1,11 @@
+.team-member-content {
+  background-color: var(--c-brand);
+  bottom: -24px;
+  width: calc(100% - 50px);
+  transition: var(--transition);
+}
+.team-member:hover .team-member-content {
+  opacity: 1 !important;
+  bottom: 24px;
+}
+
