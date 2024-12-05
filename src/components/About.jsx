@@ -1,6 +1,7 @@
 import React from "react";
 import "./About.css";
 import about from "../assets/images/about.jpg";
+import { features } from "../assets/data/AboutElixirData";
 
 const About = () => {
   return (
@@ -30,42 +31,17 @@ const About = () => {
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
               hic cupiditate libero?
             </p>
-            <div className=" d-flex mb-3 ">
-              <div className="icon-box me-4">
-                <i class="ri-mail-send-fill"></i>
+            {features.map((feature) => (
+              <div className=" d-flex mb-3 ">
+                <div className="icon-box me-4">
+                  <i class={feature.icon}></i>
+                </div>
+                <div>
+                  <h5 className=" text-capitalize">{feature.title}</h5>
+                  <p>{feature.description}</p>
+                </div>
               </div>
-              <div>
-                <h5 className=" text-capitalize">we are awesome</h5>
-                <p>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. At
-                  ab tenetur ipsa?
-                </p>
-              </div>
-            </div>
-            <div className=" d-flex mb-3 ">
-              <div className="icon-box me-4">
-                <i class="ri-user-5-fill"></i>
-              </div>
-              <div>
-                <h5 className=" text-capitalize">we are awesome</h5>
-                <p>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. At
-                  ab tenetur ipsa?
-                </p>
-              </div>
-            </div>
-            <div className=" d-flex ">
-              <div className="icon-box me-4">
-                <i class="ri-rocket-2-fill"></i>
-              </div>
-              <div>
-                <h5 className=" text-capitalize">we are awesome</h5>
-                <p>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. At
-                  ab tenetur ipsa?
-                </p>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </div>

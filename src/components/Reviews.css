@@ -1,0 +1,13 @@
+.review-head::after {
+  content: "";
+  width: 28px;
+  height: 28px;
+  position: absolute;
+  bottom: -14px;
+  background-color: white;
+  transform: rotate(45deg);
+}
+
+.review small {
+    color: var(--c-brand);
+}

@@ -1,5 +1,6 @@
 import React from "react";
 import "./services.css";
+import { services } from "../assets/data/AwesomeServicesData";
 
 const Services = () => {
   return (
@@ -18,78 +19,17 @@ const Services = () => {
           </div>
         </div>
         <div className="row text-center g-4 ">
-          <div className="col-lg-4 col-sm-6 ">
-            <div className="service position-relative z-2 overflow-hidden  theme-shadow p-lg-5 p-4">
-              <div className="icon-box">
-                <i className="ri-stack-fill"></i>
+          {services.map((service, index) => (
+            <div className="col-lg-4 col-sm-6 " key={index}>
+              <div className="service position-relative z-2 overflow-hidden  theme-shadow p-lg-5 p-4">
+                <div className="icon-box">
+                  <i className={service.icon}></i>
+                </div>
+                <h5 className="mt-4 mb-3 text">{service.title}</h5>
+                <p hover:text-white>{service.description}</p>
               </div>
-              <h5 className="mt-4 mb-3 text">UX Design</h5>
-              <p hover:text-white>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit
-                Dignissimos excepturi eveniet.
-              </p>
             </div>
-          </div>
-          <div className="col-lg-4 col-sm-6 ">
-            <div className="service position-relative z-2 overflow-hidden  theme-shadow p-lg-5 p-4">
-              <div className="icon-box">
-                <i class="ri-pen-nib-fill"></i>
-              </div>
-              <h5 className="mt-4 mb-3 text">UI Design</h5>
-              <p hover:text-white>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit
-                Dignissimos excepturi eveniet.
-              </p>
-            </div>
-          </div>
-          <div className="col-lg-4 col-sm-6 ">
-            <div className="service position-relative z-2 overflow-hidden  theme-shadow p-lg-5 p-4">
-              <div className="icon-box">
-                <i class="ri-ruler-2-fill"></i>
-              </div>
-              <h5 className="mt-4 mb-3 text">logo Design</h5>
-              <p hover:text-white>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit
-                Dignissimos excepturi eveniet.
-              </p>
-            </div>
-          </div>
-          <div className="col-lg-4 col-sm-6 ">
-            <div className="service position-relative z-2 overflow-hidden  theme-shadow p-lg-5 p-4">
-              <div className="icon-box">
-                <i class="ri-line-chart-fill"></i>
-              </div>
-              <h5 className="mt-4 mb-3 text">Digital Marketing</h5>
-              <p hover:text-white>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit
-                Dignissimos excepturi eveniet.
-              </p>
-            </div>
-          </div>
-          <div className="col-lg-4 col-sm-6 ">
-            <div className="service position-relative z-2 overflow-hidden  theme-shadow p-lg-5 p-4">
-              <div className="icon-box">
-                <i class="ri-openai-line"></i>
-              </div>
-              <h5 className="mt-4 mb-3 text">Machine Learning</h5>
-              <p hover:text-white>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit
-                Dignissimos excepturi eveniet.
-              </p>
-            </div>
-          </div>
-          <div className="col-lg-4 col-sm-6 ">
-            <div className="service position-relative z-2 overflow-hidden  theme-shadow p-lg-5 p-4">
-              <div className="icon-box">
-                <i class="ri-layout-fill"></i>
-              </div>
-              <h5 className="mt-4 mb-3 text">Web Development</h5>
-              <p hover:text-white>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit
-                Dignissimos excepturi eveniet.
-              </p>
-            </div>
-          </div>
+          ))}
         </div>
       </div>
     </section>

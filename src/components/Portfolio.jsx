@@ -1,18 +1,7 @@
-
 import React from "react";
-import project1 from "../assets/images/project-1.jpg";
-import project2 from "../assets/images/project-2.jpg";
-import project3 from "../assets/images/project-3.jpg";
-import project4 from "../assets/images/project-4.jpg";
-import project5 from "../assets/images/project-5.jpg";
-import project6 from "../assets/images/project-6.jpg";
 import "./Portfolio.css";
+import { images } from "../assets/data/OurPortfolioData";
 
-const images = [
-  { id: 1, src1: project1, src2: project2 },
-  { id: 2, src1: project3, src2: project4 },
-  { id: 3, src1: project5, src2: project6 },
-];
 const Portfolio = () => {
   return (
     <section id="portfolio" className="portfolio section-padding">
