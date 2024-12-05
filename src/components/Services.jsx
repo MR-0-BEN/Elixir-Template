@@ -81,7 +81,7 @@ const Services = () => {
           <div className="col-lg-4 col-sm-6 ">
             <div className="service position-relative z-2 overflow-hidden  theme-shadow p-lg-5 p-4">
               <div className="icon-box">
-                <i class="ri-pages-fill"></i>
+                <i class="ri-layout-fill"></i>
               </div>
               <h5 className="mt-4 mb-3 text">Web Development</h5>
               <p hover:text-white>
