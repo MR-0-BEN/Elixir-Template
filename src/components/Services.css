@@ -1,0 +1,34 @@
+/* .service style done by bootstrap in services.jsx */
+/* .service {
+  position: relative;
+  overflow: hidden;
+  z-index: 2;
+} */
+.service::after {
+  content: "";
+  width: 40px;
+  height: 40px;
+  background-color: rgba(var(--c-brand-rgb), 0.2);
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transition: var(--transition);
+}
+.service:hover::after {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(var(--c-brand-rgb));
+  z-index: -1;
+}
+
+.service:hover h5,
+.service:hover p {
+  transition: var(--transition);
+  color: white;
+}
+
+.service:hover .icon-box {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+  transition: var(--transition);
+}

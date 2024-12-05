@@ -16,7 +16,7 @@
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  background: rgba(var(--c-brand-rgp), 0.2);
+  background: rgba(var(--c-brand-rgb), 0.2);
   color: var(--c-brand);
   font-size: 34px;
   flex: none;
