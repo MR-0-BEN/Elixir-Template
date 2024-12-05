@@ -65,7 +65,7 @@ const NavBar = () => {
           </ul>
           <a
             href="#"
-            className="btn btn-brand text-white rounded-0 py-2 px-4 text-uppercase fw-semibold ms-lg-3"
+            className="btn btn-brand text-white rounded-0 py-2 px-4 text-uppercase fw-semibold ms-lg-3 mb-lg-0  mb-sm-2 "
             active
           >
             Download
