@@ -5,7 +5,7 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="contact section-padding position-relative z-2"
+      className="contact section-padding position-relative z-2 bg-light"
     >
       <div className="container">
         <div className="row">
