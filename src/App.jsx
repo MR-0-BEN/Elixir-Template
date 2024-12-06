@@ -7,6 +7,7 @@ import Portfolio from "./components/Portfolio";
 import Reviews from "./components/Reviews";
 import Services from "./components/Services";
 import Team from "./components/Team";
+import Contact from "./components/Contact";
 
 function App() {
   return (
@@ -18,7 +19,8 @@ function App() {
       <Counter />
       <Portfolio />
       <Reviews />
-      <Team/>
+      <Team />
+      <Contact />
     </div>
   );
 }
