@@ -7,7 +7,11 @@ const Team = () => {
     <section id="team" className="section-padding">
       <div className="container">
         <div className="row">
-          <div className="col-12 text-center">
+          <div
+            className="col-12 text-center"
+            data-aos="fade-down"
+            data-aos-delay="150"
+          >
             <div className="section-title">
               <h2 className="display-4 fw-semibold">Team Members</h2>
               <div className="line"></div>
@@ -19,8 +23,13 @@ const Team = () => {
           </div>
         </div>
         <div className="row gy-4">
-          {teamData.map((teamMember) => (
-            <div className="col-md-4">
+          {teamData.map((teamMember, index) => (
+            <div
+              key={index}
+              className="col-md-4"
+              data-aos="fade-down"
+              data-aos-delay={150 * (index + 1)}
+            >
               <div className="team-member image-zoom overflow-hidden position-relative">
                 {console.log(teamMember)}
                 <div className="image-zoom-wrapper overflow-hidden position-relative">

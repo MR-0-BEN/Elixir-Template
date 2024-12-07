@@ -3,13 +3,12 @@ import "./Reviews.css";
 import { Data } from "../assets/Data/TestimonialsData";
 // ... rest of the avatar images
 
-
 const Reviews = () => {
   return (
     <section id="reviews" className="reviews section-padding bg-light">
       <div className="container">
         <div className="row">
-          <div className="col-12">
+          <div className="col-12" data-aos="fade-down" data-aos-delay="150">
             <div className="section-title text-center">
               <h1 className=" display-4 fw-semibold">Testimonials</h1>
               <div className="line"></div>
@@ -21,8 +20,12 @@ const Reviews = () => {
           </div>
         </div>
         <div className="row gy-5 gx-4">
-          {Data.map((person) => (
-            <div className="col-lg-4 col-sm-6 ">
+          {Data.map((person, index) => (
+            <div
+              className="col-lg-4 col-sm-6  "
+              data-aos="fade-down"
+              data-aos-delay={150 * (index + 1)}
+            >
               <div className="review">
                 <div className="review-head bg-white theme-shadow position-relative p-4">
                   <div className="text-warning">

@@ -9,11 +9,13 @@ const Contact = () => {
     >
       <div className="container">
         <div className="row">
-          <div className="col-12 text-center">
+          <div
+            className="col-12 text-center"
+            data-aos="fade-down"
+            data-aos-delay="150"
+          >
             <div className="section-title">
-              <h2 className="display-4 fw-semibold text-white">
-                Get in touch
-              </h2>
+              <h2 className="display-4 fw-semibold text-white">Get in touch</h2>
               <div className="line bg-white"></div>
               <p className="mx-auto text-white">
                 We love to craft digital experiances for brands rather than crap
@@ -22,9 +24,16 @@ const Contact = () => {
             </div>
           </div>
         </div>
-        <div className="row justify-content-center">
+        <div
+          className="row justify-content-center "
+          data-aos="fade-down"
+          data-aos-delay="250"
+        >
           <div className="col-lg-8">
-            <form action="#" className="row g-3 p-lg-5 p-4 bg-white theme-shadow">
+            <form
+              action="#"
+              className="row g-3 p-lg-5 p-4 bg-white theme-shadow"
+            >
               <div className="form-group col-lg-6">
                 <input
                   type="text"

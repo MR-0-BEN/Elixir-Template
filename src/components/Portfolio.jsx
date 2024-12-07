@@ -7,7 +7,7 @@ const Portfolio = () => {
     <section id="portfolio" className="portfolio section-padding">
       <div className="container">
         <div className="row">
-          <div className="col-12">
+          <div className="col-12" data-aos="fade-down" data-aos-delay="150">
             <div className="section-title text-center">
               <h1 className=" display-4 fw-semibold">Our Portfolio</h1>
               <div className="line"></div>
@@ -19,8 +19,8 @@ const Portfolio = () => {
           </div>
         </div>
         <div className="row gy-4">
-          {images.map((image) => (
-            <div key={image.id} className="col-md-4">
+          {images.map((image, index) => (
+            <div key={image.id} className="col-md-4 " data-aos="fade-down" data-aos-delay={150 * (index + 1)}>
               <div className="portfolio-item image-zoom position-relative overflow-hidden ">
                 <div className="image-zoom-wrapper position-relative overflow-hidden ">
                   <img src={image.src1} alt="" className="" />

@@ -8,7 +8,11 @@ const Blog = () => {
     <section className="section-padding" id="blog">
       <div className="container">
         <div className="row">
-          <div className="col-12 text-center">
+          <div
+            className="col-12 text-center"
+            data-aos="fade-down"
+            data-aos-delay="150 "
+          >
             <div className="section-title">
               <h2 className="display-4 fw-semibold ">Blog</h2>
               <div className="line "></div>
@@ -20,8 +24,13 @@ const Blog = () => {
           </div>
         </div>
         <div className="row">
-          {BlogData.map((Blog) => (
-            <div className="col-md-4">
+          {BlogData.map((Blog, index) => (
+            <div
+              key={index}
+              className="col-md-4"
+              data-aos="fade-down"
+              data-aos-delay={150 * (index + 1)}
+            >
               <div className="blog-post image-zoom overflow-hidden">
                 <div className="image-zoom-wrapper overflow-hidden">
                   <img src={Blog.image} alt="" />

@@ -21,3 +21,6 @@
   box-shadow: none;
   border-color: var(--c-brand);
 }
+.contact textarea {
+  resize: none;
+}

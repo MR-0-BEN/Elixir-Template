@@ -85,7 +85,7 @@ const Footer = () => {
               <p mb-0>
                 Made with 
                 <i class="ri-heart-fill mx-1"></i>
-                By <a href=""> MR.BeN</a>
+                By <a href="https://github.com/MR-0-BEN"> MR.BeN</a>
               </p>
             </div>
           </div>

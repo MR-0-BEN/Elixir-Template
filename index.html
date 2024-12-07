@@ -22,10 +22,12 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css"
     />
+    <!-- Animate on scroll library  -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- page title -->
     <title>Elixir - BootStrap</title>
   </head>
-  <body>
+  <body data-bs-spy="scroll" data-bs-target=".navbar">
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
     <!-- bootstrap -->
@@ -36,5 +38,7 @@
     ></script>
     <!-- fancy box -->
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <!-- Animate on scroll library  -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   </body>
 </html>
