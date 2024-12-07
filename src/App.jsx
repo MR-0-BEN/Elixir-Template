@@ -9,6 +9,7 @@ import Services from "./components/Services";
 import Team from "./components/Team";
 import Contact from "./components/Contact";
 import Blog from "./components/Blog";
+import Footer from "./components/footer";
 
 function App() {
   return (
@@ -22,7 +23,8 @@ function App() {
       <Reviews />
       <Team />
       <Contact />
-      <Blog/>
+      <Blog />
+      <Footer/>
     </div>
   );
 }
