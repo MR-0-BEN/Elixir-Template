@@ -4,11 +4,16 @@ A brief description of your project goes here. This project is a React applicati
 
 ## Table of Contents
 
+- [Live Demo](#live-demo)
 - [Features](#features)
 - [Technologies Used](#technologies-used)
 - [Installation](#installation)
 - [Usage](#usage)
 - [License](#license)
+
+## Live Demo
+
+You can check out the live version of the application here: [Elixir Template Live](https://elixir-template-qi4a9gmil-mrbens-projects.vercel.app/)
 
 ## Features
 
@@ -56,7 +61,7 @@ To get started with this project, follow these steps:
 5. Start the development server:
 
    ```bash
-   npm start
+   npm run dev
    ```
 
 6. Open your browser and go to [http://localhost:3000](http://localhost:3000) to see the application in action.
@@ -68,3 +73,4 @@ Once the application is running, you can navigate through the different sections
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
