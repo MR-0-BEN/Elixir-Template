@@ -1,6 +1,6 @@
 import React from "react";
 import "./Reviews.css";
-import TestimonialsData from "../assets/Data/TestimonialsData";
+import TestimonialsData from "../assets/data/TestimonialsData";
 // ... rest of the avatar images
 
 const Reviews = () => {
