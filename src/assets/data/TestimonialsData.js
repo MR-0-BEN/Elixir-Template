@@ -5,7 +5,7 @@ import avatar4 from "../images/avatar-4.jpg";
 import avatar5 from "../images/avatar-5.jpg";
 import avatar6 from "../images/avatar-6.jpg";
 
-const Data = [
+const TestimonialsData = [
   {
     review:
       "This design is truly spectacular, combining usability with aesthetics. The attention to detail is unmatched!",
@@ -50,4 +50,4 @@ const Data = [
   },
 ];
 
-export default Data
+export default TestimonialsData

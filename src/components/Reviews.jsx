@@ -1,6 +1,6 @@
 import React from "react";
 import "./Reviews.css";
-import  Data  from "../assets/Data/TestimonialsData";
+import TestimonialsData from "../assets/Data/TestimonialsData";
 // ... rest of the avatar images
 
 const Reviews = () => {
@@ -20,7 +20,7 @@ const Reviews = () => {
           </div>
         </div>
         <div className="row gy-5 gx-4">
-          {Data.map((person, index) => (
+          {TestimonialsData.map((person, index) => (
             <div
               className="col-lg-4 col-sm-6  "
               data-aos="fade-down"
