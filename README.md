@@ -13,7 +13,7 @@ A brief description of your project goes here. This project is a React applicati
 
 ## Live Demo
 
-You can check out the live version of the application here: [Elixir Template Live](https://elixir-template-qi4a9gmil-mrbens-projects.vercel.app/)
+You can check out the live version of the application here: [Elixir Template Live](https://elixir-template-six.vercel.app/)
 
 ## Features
 
